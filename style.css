@@ -1,0 +1,122 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: auto;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+
+    background-color: #c1c1c1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #444444;
+}
+
+#canvas_container {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #000000;
+    float: top;
+    position: relative;
+    top: 10%;
+    left: 0%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#pTxt {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#url_container {
+    width: 20%;
+    height: 10%;
+    margin: 2px auto;
+    padding: 0;
+    border: none;
+    background-color: #c0a3a3;
+    position: relative;
+    left: 0%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+#url_container:hover {
+    margin: 2px auto;
+    border: 2px solid #c0a3a3;
+    background-color: transparent;
+}
+
+#url_container:hover >#pTxt{
+    color: #c0a3a3;
+    background-color: #fff;
+}
+
+#picture_container {
+    width: 20%;
+    height: 10%;
+    margin: 2px auto;
+    padding: 0;
+    border: none;
+    background-color: #b1c0b1;
+    position: relative;
+    left: 0%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+#picture_container:hover {
+    margin: 2px auto;
+    border: 2px solid #b1c0b1;
+    background-color: transparent;
+}
+
+#picture_container:hover >#pTxt {
+    color: #b1c0b1;
+    background-color: #fff;
+}
+
+#delete_container {
+    width: 20%;
+    height: 10%;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background-color: #b2b2c7;
+    position: relative;
+    top: 80%;
+    left: 0%;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+#delete_container:hover {
+    border: 2px solid #b2b2c7;
+    background-color: transparent;
+}
+
+#delete_container:hover >#pTxt{
+    color: #b2b2c7;
+    background-color: #fff;
+}
